@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Grid.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="classie.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+    </script>
+    <script>
+        // function openNav() {
+        //     document.getElementById("mySidenav").style.width = "250px";
+
+        // }
+        // function closeNav() {
+        //     document.getElementById("mySidenav").style.width = "0";
+        // }
+        $(document).ready(function() {
+                $('.bars').on('click', function() {
+                    $('.overlay').fadeIn(250)
+                })
+                $('.closebtn').on('click', function() {
+                    $('.overlay').fadeOut(250)
+                })
+            })
+            /*function myFunction() { var x = document.getElementById("myLinks"); if (x.style.display === "none") { x.style.display = "block"; } else { x.style.display = "none"; } }*/
+    </script>
+    <script src="app.js"></script>
+    <script>
+        if ($(document).height() > $(window).height()) {
+            var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
+            $('html').addClass('noscroll').css('top', -scrollTop);
+        }
+    </script>
+    <div class="root">
+        <div class="nav">
+            <div id="mySidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">درباره ما</a>
+                <a href="#">سرویس ها</a>
+                <a href="#">مشتری</a>
+                <a href="#">ارتباط</a>
+
+            </div>
+            <span class="bars" onclick="openNav()"> &#9776;</span>
+
+            <!-- <div id="myLinks">
+            <a class="navlist" href="#news">News</a>
+            <a class="navlist" href="#contact">Contact</a>
+            <a class="navlist" href="#about">About</a>
+        </div>
+        <a class="icon" onclick="myFunction()">
+            <i class="material-icons">reorder</i>
+        </a> -->
+        </div>
+        <div id="motherContainer">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="header">
+                    <div class="inputHolder">
+                        <div class="iconHolder">
+                            <i class="material-icons">search</i>
+                        </div>
+                        <input class='headerInput' placeholder="Search">
+
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="list">
+                        <div class="uperdiv">
+                        </div>
+                        <div class="bottomdiv">
+                            <div class="menu">منو</div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                            <div class="listItem"><a>دورهمی</a></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="rowType">
+                            <div class="topic">
+                                <h2>نقشه</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowType">
+                            <h2>یادگیری ماشینی</h2>
+                        </div>
+                        <div class="container">
+                            <div class="grid-row">
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوگل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="grid-item-wrapper">
+                                        <div class="grid-item-container">
+                                            <img src="maps.svg" />
+                                            <h3>نقشه اس دی کی برای آندروید</h3>
+                                            <p class="Owner">گوکل</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+ html {
+     overflow: scroll;
+     overflow-x: hidden;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     position: relative;
+     z-index: 1.5;
+ }
+ 
+ body {
+     overflow-y: auto;
+     position: relative;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+ }
+ 
+ .header {
+     background: #F5F5F5;
+     position: inherit;
+     display: flex;
+     height: 30vh;
+ }
+ 
+ .card {
+     display: flex;
+     flex-grow: 4;
+     max-width: 1335px;
+     margin: 0 auto;
+     height: 50vh;
+ }
+ 
+ .grid-row {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: flex-start;
+ }
+ 
+ .grid-item {
+     height: 250px;
+     flex-basis: 20%;
+     width: 250px;
+     position: relative;
+     padding: 10px;
+     box-sizing: border-box;
+     cursor: pointer;
+ }
+ 
+ .grid-item-wrapper {
+     box-sizing: initial;
+     background: #FFFFFF;
+     margin: 0;
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+     box-shadow: 0 8px 6px -6px black;
+ }
+ 
+ .grid-item-container {
+     margin-top: 5px;
+     height: 100%;
+     width: 100%;
+     position: relative;
+ }
+ 
+ .main {
+     position: inherit;
+     background: #F5F5F5;
+     display: flex;
+ }
+ 
+ .list {
+     /*background-color: #5b78c7;*/
+     display: flex;
+     height: 100vh;
+     width: 20vh;
+     margin-top: 5px;
+ }
+ 
+ .nav {
+     position: relative;
+     z-index: 3;
+     height: 48px;
+     background: #FFFFFF;
+     -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+     box-shadow: 0 8px 6px -6px black;
+ }
+ 
+ .nav-links {
+     display: flex;
+     list-style: none;
+     width: 50%;
+     height: 100%;
+     justify-content: space-around;
+     align-items: center;
+     margin-left: auto;
+ }
+ 
+ .nav-links li a {
+     color: white;
+     text-decoration: none;
+     font-size: 60px;
+ }
+ 
+ .headerInput {
+     padding-left: 30px;
+     align-self: center;
+     margin: 0px 0px 0px 172px;
+     height: 5vh;
+     width: 82vh;
+     outline: none;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+ }
+ 
+ .grid-item :hover {
+     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+ }
+ 
+ .view {
+     color: #3367d6;
+ }
+ 
+ .topic {
+     flex-direction: row;
+ }
+ 
+ .topic h2 {
+     margin-right: 12px;
+ }
+ 
+ .owner {
+     color: #ccc;
+     font-size: 13px;
+     font-weight: 300;
+     line-height: 20px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis
+ }
+ 
+ li {
+     margin: 5px 0 0px 20px;
+ }
+ 
+ .iconHolder {}
+ 
+ .nav #myLinks {
+     margin-top: 50px;
+     display: flex;
+ }
+ 
+ .nav a {
+     color: white;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     display: block;
+ }
+ 
+ .nav a.icon {
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 0;
+     color: black;
+ }
+ 
+ .navlist {
+     color: black;
+ }
+ 
+ .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     background-color: #F5F5F5;
+     overflow-x: hidden;
+     transition: 10s;
+     padding-top: 60px;
+ }
+ 
+ .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+ }
+ 
+ .sidenav a:hover {
+     color: #f1f1f1;
+ }
+ 
+ .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+ 
+ @media screen and (max-height: 450px) {
+     .sidenav {
+         padding-top: 15px;
+     }
+     .sidenav a {
+         font-size: 18px;
+     }
+ }
+ 
+ .bars {
+     font-size: 30px;
+     cursor: pointer;
+     margin-left: 10px;
+ }
+ 
+ .motherContainer,
+ .content,
+ .container {
+     position: relative;
+ }
+ 
+ .overlay {
+     opacity: .6;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+     background: black;
+     display: none;
+ }
+ 
+ ::-webkit-scrollbar {
+     width: 0px;
+     /* Remove scrollbar space */
+     background: transparent;
+     /* Optional: just make scrollbar invisible */
+ }
+ /* Optional: show position indicator in red */
+ 
+ ::-webkit-scrollbar-thumb {
+     background: #FF0000;
+ }
+ 
+ .inputHolder {
+     height: 7vh;
+     width: 48px;
+     margin: 0 0 0 0;
+     display: flex;
+     align-items: center;
+     justify-content: center
+ }
+ 
+ .listItem {
+     margin: 15px 0 0 25px;
+     cursor: pointer;
+ }
+ 
+ .menu {
+     font-size: 32px;
+     margin: 10px 0 5px 25px;
+     border-bottom: black 3px;
+     cursor: pointer;
+ }
+ 
+ .main {
+     text-decoration: none;
+ }
